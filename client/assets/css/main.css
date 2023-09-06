@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Hauora";
+    src: local("Hauora"),
+    url(../fonts/Hauora/Hauora-Regular.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Hauora-Semibold";
+    src: local("Hauora"),
+    url(../fonts/Hauora/Hauora-SemiBold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Hauora-Bold";
+    src: local("Hauora"),
+    url(../fonts/Hauora/Hauora-Bold.otf) format("truetype");
+}
+
+
+@layer base {
+    .font-hauora {
+        font-family: Hauora, serif;
+    }
+
+    .font-hauora-semibold {
+        font-family: Hauora-Semibold, serif;
+    }
+
+    .font-hauora-bold {
+        font-family: Hauora-Bold, serif;
+
+    }
+    .heading-1 {
+        @apply font-hauora-bold text-[32px]
+    }
+    .heading-2 {
+        @apply font-hauora-bold text-[24px]
+    }
+    .subheading-1 {
+        @apply font-hauora-semibold text-[18px]
+    }
+
+    .subheading-2 {
+        @apply font-hauora-semibold text-[16px]
+    }
+
+    .body-text-1 {
+        @apply font-hauora-semibold text-[14px]
+    }
+
+    .body-text-2 {
+        @apply font-hauora text-[14px]
+    }
+
+    .metadata-1 {
+        @apply font-hauora text-[12px]
+    }
+
+    .button {
+        @apply py-[12px] bg-button text-secondary-bg px-[60px] rounded-[30px] transition
+    }
+
+    .button:active {
+        @apply bg-on-pressed
+    }
+
+       .button-success {
+        @apply py-[12px] bg-success text-secondary-bg px-[60px] rounded-[30px] transition
+    }
+
+    .button-success:active {
+        @apply bg-on-pressed
+    }
+
+    .button-url {
+        @apply py-[12px] bg-warning text-black px-[60px] rounded-[30px] transition
+    }
+
+    .button-url:active {
+        @apply bg-on-pressed
+    }
+
+
+    .fast-action-button {
+         @apply py-[4px] border border-button text-tmain px-[20px] rounded-[30px] transition
+    }
+    .fast-action-button:active {
+         @apply bg-on-pressed text-secondary-bg
+    }
+
+
+
+    .input {
+        @apply bg-secondary-bg body-text-1 py-[6px] px-[8px] rounded-[4px]
+
+    }
+    .input:focus {
+        @apply outline-disabled
+    }
+    .input::placeholder{
+
+    }
+}
