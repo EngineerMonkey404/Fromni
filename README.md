@@ -1,7 +1,7 @@
 # Fromni
 Тестовое задание
 ### Client
-В папке /client
+В папке ./client
 - `yarn install`
 - `yarn dev`
 
